@@ -6,34 +6,37 @@
   min-height: 0;
 }
 
-#waybar {
+window#waybar {
   background-color: @surface0;
-  color: @text;
+  color: @subtext0;
   margin: 5px 5px;
   padding: 2px;
 }
 
-button {
-  box-shadow: inset 0 -3px transparent;
-}
-
-button:hover {
-  background: inherit;
-  border-top: 2px solid @hover;
-}
-
 #workspaces button {
-  padding: 0 4px;
+  padding: 0 5px;
+  background: transparent;
+  color: @text;
+  border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-  background-color: @surface1;
-  color: @blue;
-  border-bottom: 2px solid @blue;
+  color: @flamingo;
+  border-top: 2px solid @flamingo;
 }
 
-#workspaces button.urgent {
-  background-color: @red;
+#workspaces button.active {
+  color: @yellow;
+  border-top: 2px solid yellow; /*You can adjust the border color as needed */
+}
+
+#workspaces button.inactive {
+  color:@green;
+}
+
+#workspaces button.current_input {
+  background: @flamingo;
+  color:@green;
 }
 
 #pulseaudio,
@@ -48,7 +51,7 @@ button:hover {
 #tray,
 #mode,
 #scratchpad {
-  margin: 2px 4px;
+  margin: 2px 6px;
   padding-left: 4px;
   padding-right: 4px;
 }
@@ -64,27 +67,24 @@ button:hover {
   border-bottom: 2px solid @green;
 }
 
-#network {
+
+#pulseaudio {
   color: @teal;
   border-bottom: 2px solid @teal;
 }
 
-#cpu {
-  color: @maroon;
-  border-bottom: 2px solid @maroon;
-}
 
-#memory {
+#network {
   color: @red;
   border-bottom: 2px solid @red;
 }
 
-#temperature {
+#cpu {
   color: @mauve;
   border-bottom: 2px solid @mauve;
 }
 
-#pulseaudio {
+#memory {
   color: @pink;
   border-bottom: 2px solid @pink;
 }
