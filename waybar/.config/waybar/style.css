@@ -10,7 +10,7 @@ window#waybar {
   background-color: @surface0;
   color: @subtext0;
   margin: 5px 5px;
-  padding: 2px;
+  padding: 2px 5px;
 }
 
 #workspaces button {
@@ -32,6 +32,10 @@ window#waybar {
 
 #workspaces button.inactive {
   color:@green;
+}
+
+#workspaces {
+  margin-right: 10px;
 }
 
 #workspaces button.current_input {
