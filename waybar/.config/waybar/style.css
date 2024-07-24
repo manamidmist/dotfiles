@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: @surface0;
+  background-color: @mantle;
   color: @subtext0;
   margin: 5px 5px;
   padding: 2px 5px;
