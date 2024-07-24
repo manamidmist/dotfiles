@@ -12,7 +12,7 @@ window {
 
 button {
     color: #585b70;
-    background-color: #313244;
+    background-color: #181825;
     outline-style: none;
     border: none;
     border-width: 0px;
@@ -23,16 +23,15 @@ button {
     box-shadow: none;
     text-shadow: none;
     animation: gradient_f 20s ease-in infinite;
+    margin: 0rem 0.4rem;
 }
 
 
 button:focus {
-    background-color: #cba6f7;
     background-size: 16%;
 }
 
 button:hover {
-    background-color: #f38ba8;
     background-size: 24%;
     border-radius: 0px;
     animation: gradient_f 20s ease-in infinite;
