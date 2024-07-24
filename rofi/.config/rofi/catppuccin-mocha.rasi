@@ -1,26 +1,29 @@
 * {
-    bg-col:  #1e1e2e;
+    bg-col:  #181825;
     bg-col-light: #1e1e2e;
-    border-col: #1e1e2e;
+    border-col: #cba6f7;
     selected-col: #1e1e2e;
     blue: #89b4fa;
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     grey: #6c7086;
-    width: 600;
-    font: "JetBrainsMono Nerd Font 18";
+
+    font: "MesloLGS Nerd Font 16";
 }
 
-element-text, element-icon , mode-switcher {
+element-text, element-icon , mode-switcher, entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
     background-color: inherit;
-    text-color:       inherit;
 }
 
 window {
+    width: 1400;
     height: 560px;
-    border: 3px;
+    border: 2px;
     border-color: @border-col;
     background-color: @bg-col;
+    text-color: @fg-col;
 }
 
 mainbox {
@@ -30,15 +33,14 @@ mainbox {
 inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
-    border-radius: 5px;
-    padding: 2px;
+    padding: 11px;
+    border: 2px 2px 1px 2px;
+    border-color: @border-col;
+    text-color: @fg-col;
 }
 
 prompt {
-    background-color: @blue;
     padding: 6px;
-    text-color: @bg-col;
-    border-radius: 3px;
     margin: 20px 0px 0px 20px;
 }
 
@@ -55,7 +57,7 @@ entry {
 }
 
 listview {
-    border: 0px 0px 0px;
+    border: 0px 2px 2px 2px; 
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 2;
