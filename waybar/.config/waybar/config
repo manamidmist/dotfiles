@@ -42,7 +42,8 @@
     },
     "clock": {
         "format": "{:%T} ",
-        "format-alt": "{:%a %d-%b-%Y}"
+        "format-alt": "{:%a %d-%b-%Y}",
+        "tooltip": false
     },
     "cpu": {
         "format": "{usage}% ",
