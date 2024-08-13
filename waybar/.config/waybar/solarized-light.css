@@ -1,0 +1,27 @@
+/*
+* https://ethanschoonover.com/solarized/
+*
+* ███████  ██████  ██       █████  ██████  ██ ███████ ███████ ██████  
+* ██      ██    ██ ██      ██   ██ ██   ██ ██    ███  ██      ██   ██ 
+* ███████ ██    ██ ██      ███████ ██████  ██   ███   █████   ██   ██ 
+*      ██ ██    ██ ██      ██   ██ ██   ██ ██  ███    ██      ██   ██ 
+* ███████  ██████  ███████ ██   ██ ██   ██ ██ ███████ ███████ ██████                                                                                                             
+*
+*/
+
+@define-color base03    #002b36; /* darkest */
+@define-color base02    #073642; 
+@define-color base01    #586e75; /* optional emphasized content */
+@define-color base00    #657b83; /* body text / primary content */
+@define-color base0     #839496; /* borders */
+@define-color base1     #93a1a1; /* comments secondary content */
+@define-color base2     #eee8d5; /* background highlights */
+@define-color base3     #fdf6e3; /* lightest | background */
+@define-color yellow    #b58900;
+@define-color orange    #cb4b16;
+@define-color red       #dc322f;
+@define-color magenta   #d33682;
+@define-color violet    #6c71c4;
+@define-color blue      #268bd2;
+@define-color cyan      #2aa198;
+@define-color green     #859900;

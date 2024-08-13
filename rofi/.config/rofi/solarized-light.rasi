@@ -1,0 +1,121 @@
+* {
+    base03:    #002b36;
+    base02:    #073642;
+    base01:    #586e75;
+    base00:    #657b83;
+    base0:     #839496;
+    base1:     #93a1a1;
+    base2:     #eee8d5;
+    base3:     #fdf6e3;
+    yellow:    #b58900;
+    orange:    #cb4b16;
+    red:       #dc322f;
+    magenta:   #d33682;
+    violet:    #6c71c4;
+    blue:      #268bd2;
+    cyan:      #2aa198;
+    green:     #859900;
+
+    font: "MesloLGS Nerd Font 16";
+}
+
+element-text, element-icon , mode-switcher, entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
+    background-color: inherit;
+}
+
+window {
+    width: 1400;
+    height: 560px;
+    border: 2px;
+    border-color: @base0;
+    background-color: @base3;
+    text-color: @base00;
+    border-radius: 5px;
+}
+
+mainbox {
+    background-color: @base3;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @base3;
+    padding: 11px;
+    border: 0px 0px 1px 0px;
+    border-color: @base0;
+    text-color: @base00;
+}
+
+prompt {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @base00;
+    background-color: @base3;
+}
+
+listview {
+    border: 0px 2px 2px 2px; 
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 2;
+    lines: 5;
+    background-color: @base3;
+}
+
+element {
+    padding: 5px;
+    background-color: @base3;
+    text-color: @base00;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color: @base2;
+    text-color: @blue;
+}
+
+mode-switcher {
+    spacing: 0;
+  }
+
+button {
+    padding: 10px;
+    background-color: @base2;
+    text-color: @base01;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: @base2;
+  text-color: @blue;
+}
+
+message {
+    background-color: @base3;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @blue;
+    background-color: @base3;
+}

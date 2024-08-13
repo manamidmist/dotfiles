@@ -1,4 +1,14 @@
-@import "mocha.css";
+/*
+*
+* ██     ██  █████  ██    ██ ██████   █████  ██████  
+* ██     ██ ██   ██  ██  ██  ██   ██ ██   ██ ██   ██ 
+* ██  █  ██ ███████   ████   ██████  ███████ ██████  
+* ██ ███ ██ ██   ██    ██    ██   ██ ██   ██ ██   ██ 
+*  ███ ███  ██   ██    ██    ██████  ██   ██ ██   ██
+*
+*/
+
+@import "solarized-light.css";
 
 * {
   font-family: MesloLGS Nerd Font;
@@ -7,8 +17,8 @@
 }
 
 window#waybar {
-  background-color: @mantle;
-  color: @subtext0;
+  background-color: @base3;
+  color: @base00;
   margin: 5px 5px;
   padding: 2px 5px;
 }
@@ -16,22 +26,22 @@ window#waybar {
 #workspaces button {
   padding: 0 5px;
   background: transparent;
-  color: @text;
+  color: @base01;
   border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-  color: @flamingo;
-  border-top: 2px solid @flamingo;
+  color: @red;
+  border-top: 2px solid @red;
 }
 
 #workspaces button.active {
-  color: @yellow;
-  border-top: 2px solid yellow; /*You can adjust the border color as needed */
+  color: @red;
+  border-top: 2px solid @red; /*You can adjust the border color as needed */
 }
 
 #workspaces button.inactive {
-  color:@green;
+  color:@violet;
 }
 
 #workspaces {
@@ -39,7 +49,7 @@ window#waybar {
 }
 
 #workspaces button.current_input {
-  background: @flamingo;
+  background: @violet;
   color:@green;
 }
 
@@ -73,29 +83,29 @@ window#waybar {
 
 
 #pulseaudio {
-  color: @teal;
-  border-bottom: 2px solid @teal;
+  color: @base01;
+  border-bottom: 2px solid @base01;
 }
 
 
 #network {
-  color: @red;
-  border-bottom: 2px solid @red;
+  color: @base01;
+  border-bottom: 2px solid @base01;
 }
 
 #cpu {
-  color: @mauve;
-  border-bottom: 2px solid @mauve;
+  color: @base01;
+  border-bottom: 2px solid @base01;
 }
 
 #memory {
-  color: @pink;
-  border-bottom: 2px solid @pink;
+  color: @base01;
+  border-bottom: 2px solid @base01;
 }
 
 #clock {
-  color: @flamingo;
-  border-bottom: 2px solid @flamingo;
+  color: @base01;
+  border-bottom: 2px solid @base01;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

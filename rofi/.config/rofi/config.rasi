@@ -1,3 +1,11 @@
+/*                             */
+/* ██████   ██████  ███████ ██ */
+/* ██   ██ ██    ██ ██      ██ */
+/* ██████  ██    ██ █████   ██ */
+/* ██   ██ ██    ██ ██      ██ */
+/* ██   ██  ██████  ██      ██ */
+/*                             */
+
 configuration{
     modi: "run,window,combi";
     icon-theme: "Oranchelo";
@@ -14,4 +22,4 @@ configuration{
     sidebar-mode: false;
 }
 
-@theme "catppuccin-mocha"
+@theme "solarized-light"
