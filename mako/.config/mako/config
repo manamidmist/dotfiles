@@ -18,10 +18,10 @@ margin=20
 border-radius=6
 
 # Colors
-background-color=#fdf6e3
-text-color=#657b83
-border-color=#839496
-progress-color=over #268bd2
+background-color=#282828
+text-color=#928374
+border-color=#928374
+progress-color=over #98971A
 
 [urgency=high]
-border-color=#dc322f
+border-color=#CC241D

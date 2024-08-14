@@ -22,4 +22,4 @@ configuration{
     sidebar-mode: false;
 }
 
-@theme "solarized-light"
+@theme "gruvbox-dark"

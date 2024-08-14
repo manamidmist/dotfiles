@@ -1,0 +1,48 @@
+/* https://github.com/morhetz/gruvbox?tab=readme-ov-file
+*
+*  ██████  ██████  ██    ██ ██    ██ ██████   ██████  ██   ██ 
+* ██       ██   ██ ██    ██ ██    ██ ██   ██ ██    ██  ██ ██  
+* ██   ███ ██████  ██    ██ ██    ██ ██████  ██    ██   ███   
+* ██    ██ ██   ██ ██    ██  ██  ██  ██   ██ ██    ██  ██ ██  
+*  ██████  ██   ██  ██████    ████   ██████   ██████  ██   ██
+*
+*/
+
+/* dark browny greys | background colours | dark to light */
+@define-color bg0           #282828; /* 235 */
+@define-color bg1           #3c3836; /* 237 */
+@define-color bg2           #504945; /* 239 */
+@define-color bg3           #665c54; /* 241 */
+@define-color bg4           #7c6f64; /* 243 */
+
+/* light yellowly greys | forground colours | dark to light */
+@define-color fg4           #a89984; /* 246 */
+@define-color fg3           #bdae93; /* 248 */
+@define-color fg2           #d5c4a1; /* 250 */
+@define-color fg1           #ebdbb2; /* 223 */
+@define-color fg0           #fbf1c7; /* 229 */
+
+/* colours */
+@define-color grey          #A89984; /* 246 */
+@define-color grey_muted    #928374; /* 245 */
+
+@define-color red           #cc241d; /* 124 */
+@define-color red_muted     #fb4934; /* 167 */
+
+@define-color green         #98971a; /* 106 */
+@define-color green_muted   #b8bb26; /* 142 */
+
+@define-color yellow        #d79921; /* 172 */
+@define-color yellow_muted  #fabd2f; /* 214 */
+
+@define-color blue          #458588; /*  66 */
+@define-color blue_muted    #83a598; /* 109 */
+
+@define-color purple        #b16286; /* 132 */
+@define-color purple_muted  #d3869b; /* 175 */
+
+@define-color aqua_muted    #8ec07c; /* 108 */
+@define-color aqua          #689d6a; /*  72 */
+
+@define-color orange        #d65d0e; /* 166 */
+@define-color orange_muted  #fe8019; /* 208 */

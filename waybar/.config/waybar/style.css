@@ -8,7 +8,7 @@
 *
 */
 
-@import "solarized-light.css";
+@import "gruvbox.css";
 
 * {
   font-family: MesloLGS Nerd Font;
@@ -17,8 +17,8 @@
 }
 
 window#waybar {
-  background-color: @base3;
-  color: @base00;
+  background-color: @bg0;
+  color: @fg2;
   margin: 5px 5px;
   padding: 2px 5px;
 }
@@ -26,22 +26,22 @@ window#waybar {
 #workspaces button {
   padding: 0 5px;
   background: transparent;
-  color: @base01;
+  color: @fg1;
   border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-  color: @red;
-  border-top: 2px solid @red;
+  color: @yellow;
+  border-top: 2px solid @yellow;
 }
 
 #workspaces button.active {
-  color: @red;
-  border-top: 2px solid @red; /*You can adjust the border color as needed */
+  color: @yellow;
+  border-top: 2px solid @yellow; /*You can adjust the border color as needed */
 }
 
 #workspaces button.inactive {
-  color:@violet;
+  color:@aqua;
 }
 
 #workspaces {
@@ -49,7 +49,7 @@ window#waybar {
 }
 
 #workspaces button.current_input {
-  background: @violet;
+  background: @yellow;
   color:@green;
 }
 
@@ -73,39 +73,22 @@ window#waybar {
 
 #idle_inhibitor {
   color: @yellow;
-  border-bottom: 2px solid @yellow;
+  border-top: 2px solid @yellow;
 }
 
 #idle_inhibitor.activated {
   color: @green;
-  border-bottom: 2px solid @green;
+  border-top: 2px solid @green;
 }
 
 
-#pulseaudio {
-  color: @base01;
-  border-bottom: 2px solid @base01;
-}
-
-
-#network {
-  color: @base01;
-  border-bottom: 2px solid @base01;
-}
-
-#cpu {
-  color: @base01;
-  border-bottom: 2px solid @base01;
-}
-
-#memory {
-  color: @base01;
-  border-bottom: 2px solid @base01;
-}
-
+#pulseaudio,
+#network,
+#cpu,
+#memory,
 #clock {
-  color: @base01;
-  border-bottom: 2px solid @base01;
+  color: @yellow;
+  border-top: 2px solid @yellow;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
