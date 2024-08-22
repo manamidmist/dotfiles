@@ -17,86 +17,120 @@
 }
 
 window#waybar {
-  background-color: @bg0;
+  background: @bg1;
+}
+
+.modules-left,
+.modules-right,
+.modules-center
+{
   color: @fg2;
-  margin: 5px 5px;
-  padding: 2px 5px;
 }
 
-#workspaces button {
-  padding: 0 5px;
-  background: transparent;
-  color: @fg1;
-  border-top: 2px solid transparent;
-}
-
-#workspaces button.focused {
-  color: @yellow;
-  border-top: 2px solid @yellow;
-}
-
-#workspaces button.active {
-  color: @yellow;
-  border-top: 2px solid @yellow; /*You can adjust the border color as needed */
-}
-
-#workspaces button.inactive {
-  color:@aqua;
-}
-
-#workspaces {
-  margin-right: 10px;
-}
-
-#workspaces button.current_input {
-  background: @yellow;
-  color:@green;
-}
-
-#pulseaudio,
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#wireplumber,
-#tray,
-#mode,
-#scratchpad {
-  margin: 2px 6px;
-  padding-left: 4px;
-  padding-right: 4px;
+.modules-left
+{
+  padding: 0px 16px 0px 0px;
 }
 
 
-#idle_inhibitor {
-  color: @yellow;
-  border-top: 2px solid @yellow;
-}
-
-#idle_inhibitor.activated {
-  color: @green;
-  border-top: 2px solid @green;
+.modules-right
+{
+   padding: 0px 0px 0px 16px;
 }
 
 
-#pulseaudio,
-#network,
-#cpu,
-#memory,
-#clock {
-  color: @yellow;
-  border-top: 2px solid @yellow;
+.modules-center
+{
+  padding: 0px 16px 0px 16px;
 }
+
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
   margin-left: 0;
+
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right>widget:last-child>#workspaces {
   margin-right: 0;
+}
+
+
+#workspaces button {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+}
+
+#workspaces button {
+  background-color: @bg3;
+  color:@fg2;
+}
+
+#workspaces button.active {
+  background-color: @blue_muted;
+  color:@bg0;
+}
+
+#workspaces button.focused
+#workspaces button:hover {
+  background-color: @green_muted;
+  color:@bg0;
+}
+
+#workspaces {
+  margin: 0px;
+}
+
+#backlight,
+#battery,
+#clock,
+#cpu,
+#disk,
+#idle_inhibitor,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#scratchpad,
+#temperature,
+#tray,
+#wireplumber,
+#window,
+#custom-power
+ {
+  border-radius: 0;
+  border: 0;
+  margin: 0px 4px 0px 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: @bg2;
+  color:@fg1;
+}
+
+#tray{
+  margin: 0px 16px 0px 0px;
+}
+
+#custom-power {
+  background-color: @bg2;
+  color:@fg1;
+}
+
+#pulseaudio:hover,
+#custom-power:hover {
+  background-color: @green_muted;
+  color:@bg0;
+}
+
+#window {
+  background-color: @bg3;
+  color:@fg2;
 }

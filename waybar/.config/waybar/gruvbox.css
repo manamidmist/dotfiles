@@ -9,8 +9,8 @@
 */
 
 /* dark browny greys | background colours | dark to light */
-@define-color bg0           #282828; /* 235 */
-@define-color bg1           #3c3836; /* 237 */
+@define-color bg0           #282828; /* 235 */ /* darkest bg */
+@define-color bg1           #3c3836; /* 237 */ /* bg */
 @define-color bg2           #504945; /* 239 */
 @define-color bg3           #665c54; /* 241 */
 @define-color bg4           #7c6f64; /* 243 */
@@ -18,9 +18,9 @@
 /* light yellowly greys | forground colours | dark to light */
 @define-color fg4           #a89984; /* 246 */
 @define-color fg3           #bdae93; /* 248 */
-@define-color fg2           #d5c4a1; /* 250 */
-@define-color fg1           #ebdbb2; /* 223 */
-@define-color fg0           #fbf1c7; /* 229 */
+@define-color fg2           #d5c4a1; /* 250 */ /* comments */
+@define-color fg1           #ebdbb2; /* 223 */ /* standar text */
+@define-color fg0           #fbf1c7; /* 229 */ /* text highlighted */
 
 /* colours */
 @define-color grey          #A89984; /* 246 */

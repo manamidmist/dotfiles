@@ -2,10 +2,10 @@
     "layer": "top", 
     "position": "top", 
     "height": 34, 
-    "spacing": 4, 
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["pulseaudio", "clock" ],
-    "modules-right": ["cpu", "memory", "tray", "custom/power"],
+    "spacing": 8, 
+    "modules-left": ["hyprland/workspaces", "hyprland/window"  ],
+    "modules-center": ["clock" ],
+    "modules-right": ["pulseaudio", "cpu", "memory", "tray" ],
      "hyprland/workspaces": {
          "disable-scroll": true,
          "on-click": "activate",
@@ -13,11 +13,6 @@
          "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
          "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null",
          "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -32,7 +27,7 @@
         "sort-by-number": true
      },
     "hyprland/window": {
-        "max-length": 50,
+        "max-length": 70,
         "separate-outputs": true
     },
     "hyprland/language": {
@@ -40,24 +35,23 @@
         "max-length": 18
     },
     "tray": {
-        "icon-size": 21,
+        "icon-size": 24,
         "spacing": 10
     },
     "clock": {
-        "format": "{:%T} ",
-        "format-alt": "{:%a %d-%b-%Y}",
+        "format": " {:%T %a %d-%b-%Y}",
         "tooltip": false
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": " {}%"
     },
     "temperature": {
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
+        "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""]
     },
     "network": {
@@ -76,11 +70,11 @@
     },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{volume}%{icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{icon}  {volume}% {format_source}",
+        "format-bluetooth": "{icon} {volume}% {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": " {volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
