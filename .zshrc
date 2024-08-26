@@ -15,3 +15,5 @@ compinit
 
 alias fetch="fastfetch"
 alias ll="ls -laF"
+
+eval "$(starship init zsh)"
