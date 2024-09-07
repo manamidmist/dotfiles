@@ -14,11 +14,11 @@
       "left": 1,
       "top": 1
     },
-    //"type": "kitty-direct",
-    //"source": "~/Pictures/bruno-diberkato-cyber2.jpg",
+    "type": "kitty",
+    "source": "~/Pictures/bruno-diberkato-cyber2.jpg",
     //"source": "pokeget random --hide-name | fastfetch --file-raw -"
     //"height": 10,
-    //"width": 10
+    "width": 18
   },
   "display": {
       "separator": " "
@@ -54,6 +54,7 @@
           "key": "╰─󰍹",
           "keyColor": "green"
       },
+      
       "break",
 
       {
@@ -83,7 +84,7 @@
       },
       {
           "type": "wm",
-          "key": "╰─",
+          "key": "├─",
           "keyColor": "yellow"
       },
       {
@@ -93,7 +94,7 @@
       },
       {
           "type": "icons",
-          "key": "├─󰀻",
+          "key": "╰─󰀻",
           "keyColor": "yellow"
       },
      {
