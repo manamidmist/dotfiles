@@ -18,6 +18,7 @@
 
 window#waybar {
   background: @bg1;
+  padding-top: 6px;
 }
 
 .modules-left,
