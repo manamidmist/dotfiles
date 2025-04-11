@@ -6,6 +6,13 @@
 }
 
 {
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "p"
+}
+
+{
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reboot",
